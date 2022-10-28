@@ -34,7 +34,7 @@
 2022-08-10 2f742473 fbalpha2012_cps3_libretro.so.zip
 2022-08-10 f7afafa6 fbalpha2012_libretro.so.zip
 2022-08-10 368e68f2 fbalpha2012_neogeo_libretro.so.zip
-2022-10-19 d634509b fbneo_libretro.so.zip
+2022-10-28 b525e8ea fbneo_libretro.so.zip
 2022-10-08 fe8162b9 fceumm_libretro.so.zip
 2022-08-10 bb8ec39f ffmpeg_libretro.so.zip
 2022-08-10 ea06773b fixgb_libretro.so.zip
@@ -64,7 +64,7 @@
 2022-10-08 06d24f99 lutro_libretro.so.zip
 2022-08-10 e3821093 mame2003_libretro.so.zip
 2022-08-10 4cb15ee5 mame2003_midway_libretro.so.zip
-2022-10-19 1906b2ac mame2003_plus_libretro.so.zip
+2022-10-28 1dda1315 mame2003_plus_libretro.so.zip
 2022-08-10 e257a9a5 mednafen_gba_libretro.so.zip
 2022-08-10 ae74c470 mednafen_lynx_libretro.so.zip
 2022-08-10 d7ff8405 mednafen_ngp_libretro.so.zip
@@ -79,7 +79,7 @@
 2022-08-10 34b6e0d1 mednafen_wswan_libretro.so.zip
 2022-10-08 55881188 mesen_libretro.so.zip
 2022-08-10 64b3327e meteor_libretro.so.zip
-2022-10-14 56f2aebd mgba_libretro.so.zip
+2022-10-28 73dfc267 mgba_libretro.so.zip
 2022-08-10 34c6928b minivmac_libretro.so.zip
 2022-08-12 daf91a3b mrboom_libretro.so.zip
 2022-10-08 19e82b8d mu_libretro.so.zip
@@ -88,7 +88,7 @@
 2022-08-10 05f0ab96 neocd_libretro.so.zip
 2022-10-08 08473552 nestopia_libretro.so.zip
 2022-08-10 b182e2f9 np2kai_libretro.so.zip
-2022-08-10 ebca78ad nxengine_libretro.so.zip
+2022-10-28 ed62e7b9 nxengine_libretro.so.zip
 2022-08-10 3dc383ad o2em_libretro.so.zip
 2022-08-10 118c1716 oberon_libretro.so.zip
 2022-08-10 fb221b9a openlara_libretro.so.zip
@@ -96,7 +96,7 @@
 2022-10-08 5d86cabb parallel_n64_libretro.so.zip
 2022-08-10 afdc7ec8 pcem_libretro.so.zip
 2022-08-10 d4c86bd0 pcsx1_libretro.so.zip
-2022-10-18 e0c18a97 pcsx_rearmed_libretro.so.zip
+2022-10-28 45c50236 pcsx_rearmed_libretro.so.zip
 2022-10-18 7e764be8 picodrive_libretro.so.zip
 2022-10-08 f20b5990 pocketcdg_libretro.so.zip
 2022-08-10 d1eaa923 pokemini_libretro.so.zip
@@ -109,6 +109,7 @@
 2022-08-10 a9c0f199 quasi88_libretro.so.zip
 2022-08-10 8c72604b quicknes_libretro.so.zip
 2022-08-10 ccd84545 race_libretro.so.zip
+2022-10-28 f92eea12 redbook_libretro.so.zip
 2022-08-10 2bb48b14 reminiscence_libretro.so.zip
 2022-08-10 308dfac1 retro8_libretro.so.zip
 2022-08-10 6003bf26 sameboy_libretro.so.zip
@@ -127,6 +128,7 @@
 2022-08-11 2d073a26 thepowdertoy_libretro.so.zip
 2022-08-11 385ec76a tic80_libretro.so.zip
 2022-08-10 248f1e43 tyrquake_libretro.so.zip
+2022-10-28 92e0e4b3 uae4arm_libretro.so.zip
 2022-08-10 0e73c4d8 uzem_libretro.so.zip
 2022-08-10 7bf17a5d vaporspec_libretro.so.zip
 2022-10-08 8bc89ecd vbam_libretro.so.zip
