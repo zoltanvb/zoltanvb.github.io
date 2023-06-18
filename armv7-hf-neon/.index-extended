@@ -17,6 +17,7 @@
 2023-05-29 4de83afe cannonball_libretro.so.zip
 2023-04-23 70cca85d cap32_libretro.so.zip
 2022-08-10 fc20823f chailove_libretro.so.zip
+2023-06-18 f277570c chimerasnes_libretro.so.zip
 2023-05-29 955b03d9 craft_libretro.so.zip
 2022-08-10 d6e9bb05 crocods_libretro.so.zip
 2022-08-10 5902fc43 daphne_libretro.so.zip
@@ -89,6 +90,7 @@
 2023-02-25 a67fd909 neocd_libretro.so.zip
 2023-05-29 81fc45d7 nestopia_libretro.so.zip
 2023-05-29 e507537d np2kai_libretro.so.zip
+2023-06-18 f7cb80a2 numero_libretro.so.zip
 2023-02-25 df17a0b7 nxengine_libretro.so.zip
 2023-02-25 c08aa6d3 o2em_libretro.so.zip
 2022-08-10 118c1716 oberon_libretro.so.zip
@@ -106,6 +108,7 @@
 2023-05-29 00eeeedb prosystem_libretro.so.zip
 2023-06-17 62742f1a puae2021_libretro.so.zip
 2023-06-17 d54948ab puae_libretro.so.zip
+2023-06-18 ffab7c49 puzzlescript_libretro.so.zip
 2023-01-22 eec9e2ee px68k_libretro.so.zip
 2023-01-22 17419b57 quasi88_libretro.so.zip
 2023-05-29 cb132160 quicknes_libretro.so.zip
@@ -130,6 +133,7 @@
 2022-08-11 385ec76a tic80_libretro.so.zip
 2023-05-29 b818848d tyrquake_libretro.so.zip
 2022-10-28 92e0e4b3 uae4arm_libretro.so.zip
+2023-06-18 70d0ef57 uw8_libretro.so.zip
 2022-08-10 0e73c4d8 uzem_libretro.so.zip
 2023-06-17 72d52762 vaporspec_libretro.so.zip
 2023-03-26 7f047d97 vbam_libretro.so.zip
@@ -137,6 +141,7 @@
 2023-06-17 3cb20587 vecx_libretro.so.zip
 2023-03-26 f7d6b2ec vemulator_libretro.so.zip
 2023-04-23 7469ef82 vice_x128_libretro.so.zip
+2023-06-18 3cf37c0c vice_x64dtv_libretro.so.zip
 2023-04-23 3e62f6d2 vice_x64_libretro.so.zip
 2023-04-23 17abba6f vice_x64sc_libretro.so.zip
 2023-04-23 52d95344 vice_xcbm2_libretro.so.zip
