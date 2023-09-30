@@ -2,6 +2,7 @@
 2022-08-10 2f6db052 3dengine_libretro.so.zip
 2023-05-29 56d7bc65 81_libretro.so.zip
 2023-08-31 f6dc3411 a5200_libretro.so.zip
+2023-09-30 a93fc274 anarch_libretro.so.zip
 2023-08-16 b908d52a atari800_libretro.so.zip
 2022-08-10 ee4b77e1 bk_libretro.so.zip
 2023-04-23 ff03b7f3 bluemsx_libretro.so.zip
@@ -40,6 +41,7 @@
 2022-08-10 bb8ec39f ffmpeg_libretro.so.zip
 2022-08-10 ea06773b fixgb_libretro.so.zip
 2022-08-10 ea29329d fixnes_libretro.so.zip
+2023-09-30 4025a3ec flycast_libretro.so.zip
 2023-04-23 eaa08a8a fmsx_libretro.so.zip
 2022-08-10 acebfd84 freechaf_libretro.so.zip
 2023-04-23 7e3bed99 freeintv_libretro.so.zip
@@ -130,8 +132,8 @@
 2023-05-29 9a4b9b3a superbroswar_libretro.so.zip
 2022-10-08 744604c5 tgbdual_libretro.so.zip
 2022-10-14 e350d84f theodore_libretro.so.zip
-2022-08-11 2d073a26 thepowdertoy_libretro.so.zip
-2022-08-11 385ec76a tic80_libretro.so.zip
+2023-09-30 6d945306 thepowdertoy_libretro.so.zip
+2023-09-30 e67ebea2 tic80_libretro.so.zip
 2023-05-29 b818848d tyrquake_libretro.so.zip
 2022-10-28 92e0e4b3 uae4arm_libretro.so.zip
 2023-06-18 70d0ef57 uw8_libretro.so.zip
