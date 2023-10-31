@@ -13,7 +13,7 @@
 2022-10-08 6b1baf6f bsnes2014_balanced_libretro.so.zip
 2023-10-01 ca15d55f bsnes2014_performance_libretro.so.zip
 2023-08-16 5b571d78 bsnes_cplusplus98_libretro.so.zip
-2023-10-22 a9093732 bsnes_libretro.so.zip
+2023-10-31 15f417c2 bsnes_libretro.so.zip
 2023-03-26 f640957b bsnes_mercury_accuracy_libretro.so.zip
 2023-03-26 ad7db37c bsnes_mercury_balanced_libretro.so.zip
 2023-03-26 ef7f34c3 bsnes_mercury_performance_libretro.so.zip
@@ -40,7 +40,7 @@
 2023-05-29 24aa5798 fbalpha2012_cps3_libretro.so.zip
 2022-08-10 f7afafa6 fbalpha2012_libretro.so.zip
 2023-03-26 1b43d193 fbalpha2012_neogeo_libretro.so.zip
-2023-10-22 a2ae5753 fbneo_libretro.so.zip
+2023-10-31 474e827f fbneo_libretro.so.zip
 2023-09-30 cf9908ca fceumm_libretro.so.zip
 2022-08-10 bb8ec39f ffmpeg_libretro.so.zip
 2022-08-10 ea06773b fixgb_libretro.so.zip
@@ -54,9 +54,9 @@
 2023-07-01 ac93a21e fuse_libretro.so.zip
 2022-11-12 ebdc5890 galaksija_libretro.so.zip
 2023-09-30 ba75cf29 gambatte_libretro.so.zip
-2023-08-31 96a6749f gearboy_libretro.so.zip
-2023-08-31 a2293d41 gearcoleco_libretro.so.zip
-2023-08-31 1207f7e2 gearsystem_libretro.so.zip
+2023-10-31 96a6749f gearboy_libretro.so.zip
+2023-10-31 a2293d41 gearcoleco_libretro.so.zip
+2023-10-31 1207f7e2 gearsystem_libretro.so.zip
 2023-10-22 f307bd82 genesis_plus_gx_libretro.so.zip
 2023-09-30 291ff011 genesis_plus_gx_wide_libretro.so.zip
 2023-05-29 bc6e1497 gme_libretro.so.zip
@@ -72,7 +72,7 @@
 2023-06-17 34065cb8 lutro_libretro.so.zip
 2023-10-22 44574ee5 mame2003_libretro.so.zip
 2022-08-10 4cb15ee5 mame2003_midway_libretro.so.zip
-2023-04-23 493952ec mame2003_plus_libretro.so.zip
+2023-10-31 085bd2b6 mame2003_plus_libretro.so.zip
 2022-08-10 e257a9a5 mednafen_gba_libretro.so.zip
 2023-07-22 2f6f50d6 mednafen_lynx_libretro.so.zip
 2023-02-25 27d413bd mednafen_ngp_libretro.so.zip
@@ -93,7 +93,7 @@
 2023-05-29 bda529d2 mgba_libretro.so.zip
 2022-08-10 34c6928b minivmac_libretro.so.zip
 2023-10-01 5bc62a7e mojozork_libretro.so.zip
-2023-10-07 02eada2c mrboom_libretro.so.zip
+2023-10-31 fa3b2e08 mrboom_libretro.so.zip
 2023-05-29 27a0a017 mu_libretro.so.zip
 2023-08-16 aa24be85 mupen64plus_next_libretro.so.zip
 2023-05-29 5b6ec2ea nekop2_libretro.so.zip
@@ -111,7 +111,7 @@
 2023-09-30 72f9dbea parallel_n64_libretro.so.zip
 2022-08-10 afdc7ec8 pcem_libretro.so.zip
 2022-08-10 d4c86bd0 pcsx1_libretro.so.zip
-2023-10-22 90294b5d pcsx_rearmed_libretro.so.zip
+2023-10-31 b5366af9 pcsx_rearmed_libretro.so.zip
 2023-08-16 83de2541 picodrive_libretro.so.zip
 2023-05-29 af2784ed pocketcdg_libretro.so.zip
 2023-05-29 d1eaa923 pokemini_libretro.so.zip
