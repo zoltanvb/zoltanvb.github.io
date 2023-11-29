@@ -45,7 +45,7 @@
 2022-08-10 bb8ec39f ffmpeg_libretro.so.zip
 2022-08-10 ea06773b fixgb_libretro.so.zip
 2022-08-10 ea29329d fixnes_libretro.so.zip
-2023-11-22 6166e7e2 flycast_libretro.so.zip
+2023-11-26 08255afd flycast_libretro.so.zip
 2023-04-23 eaa08a8a fmsx_libretro.so.zip
 2023-11-24 3f090a99 freechaf_libretro.so.zip
 2023-04-23 7e3bed99 freeintv_libretro.so.zip
@@ -87,6 +87,7 @@
 2023-11-24 8e28e7b0 mednafen_supergrafx_libretro.so.zip
 2023-11-24 23de3657 mednafen_vb_libretro.so.zip
 2023-11-24 c897cf8f mednafen_wswan_libretro.so.zip
+2023-11-29 cb048acc mesenab_libretro.so.zip
 2023-05-29 79c5b1a0 mesen_libretro.so.zip
 2023-10-08 c76a286d mesens_libretro.so.zip
 2022-08-10 64b3327e meteor_libretro.so.zip
