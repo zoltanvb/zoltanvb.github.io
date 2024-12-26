@@ -32,7 +32,7 @@
 2024-12-15 75fa1359 dirksimple_libretro.so.zip
 2022-08-10 2233b65f dolphin_launcher_libretro.so.zip
 2023-10-08 1208ae91 dosbox_libretro.so.zip
-2024-10-23 d8619fbd dosbox_pure_libretro.so.zip
+2024-12-26 324f7146 dosbox_pure_libretro.so.zip
 2023-10-01 4dcfb234 dosbox_svn_ce_libretro.so.zip
 2023-04-23 bf1a710f dosbox_svn_libretro.so.zip
 2024-10-23 896aee34 ecwolf_libretro.so.zip
@@ -56,10 +56,10 @@
 2024-12-01 06c33ea7 fuse_libretro.so.zip
 2024-10-23 ebdc5890 galaksija_libretro.so.zip
 2024-02-14 cbc5de81 gam4980_libretro.so.zip
-2024-12-01 b7191938 gambatte_libretro.so.zip
-2024-12-15 6b987e5d gearboy_libretro.so.zip
-2024-12-15 692a29f2 gearcoleco_libretro.so.zip
-2024-11-17 41d60052 gearsystem_libretro.so.zip
+2024-12-26 ef371cda gambatte_libretro.so.zip
+2024-12-26 7bd38b97 gearboy_libretro.so.zip
+2024-12-26 2a063147 gearcoleco_libretro.so.zip
+2024-12-26 26979079 gearsystem_libretro.so.zip
 2024-12-15 e2fe1ec4 genesis_plus_gx_libretro.so.zip
 2024-10-23 7f18e6df genesis_plus_gx_wide_libretro.so.zip
 2024-10-23 a108017a geolith_libretro.so.zip
@@ -105,7 +105,7 @@
 2024-10-23 5b6ec2ea nekop2_libretro.so.zip
 2024-10-23 ae51f384 neocd_libretro.so.zip
 2023-10-01 7fe1630c nes_libretro.so.zip
-2024-12-15 f1b6587a nestopia_libretro.so.zip
+2024-12-26 59de352f nestopia_libretro.so.zip
 2024-12-01 ada2696d noods_libretro.so.zip
 2024-10-23 2af0a30c np2kai_libretro.so.zip
 2024-07-07 baac1cf3 numero_libretro.so.zip
@@ -118,8 +118,8 @@
 2024-10-23 f34d80b9 parallel_n64_libretro.so.zip
 2022-08-10 afdc7ec8 pcem_libretro.so.zip
 2022-08-10 d4c86bd0 pcsx1_libretro.so.zip
-2024-12-15 8d25f0e2 pcsx_rearmed_libretro.so.zip
-2024-10-23 b46cb7c4 picodrive_libretro.so.zip
+2024-12-26 fe0499e9 pcsx_rearmed_libretro.so.zip
+2024-12-26 c8baa4f9 picodrive_libretro.so.zip
 2024-07-07 e9f525a0 pocketcdg_libretro.so.zip
 2024-10-23 d1eaa923 pokemini_libretro.so.zip
 2024-10-23 89f78589 potator_libretro.so.zip
@@ -146,7 +146,7 @@
 2024-10-23 3be412a0 snes9x2005_plus_libretro.so.zip
 2024-12-01 71601625 snes9x2010_libretro.so.zip
 2024-10-23 0df210cb snes9x_libretro.so.zip
-2024-12-15 ba6d5437 squirreljme_libretro.so.zip
+2024-12-26 ba6d5437 squirreljme_libretro.so.zip
 2024-10-23 b8ff0725 stella2014_libretro.so.zip
 2024-10-23 9a4b9b3a superbroswar_libretro.so.zip
 2024-12-01 442eae63 tamalibretro_libretro.so.zip
@@ -183,7 +183,7 @@
 2024-05-31 c4769f03 vitaquake2-zaero_libretro.so.zip
 2022-08-10 0aa7e790 vitaquake3_libretro.so.zip
 2022-08-10 83cfde74 vitavoyager_libretro.so.zip
-2024-12-15 3b7fb626 wasm4_libretro.so.zip
+2024-12-26 1069f0d8 wasm4_libretro.so.zip
 2024-10-23 1963b919 x1_libretro.so.zip
 2024-10-23 62bb78d7 xrick_libretro.so.zip
 2024-05-31 ba714bda yabasanshiro_libretro.so.zip
