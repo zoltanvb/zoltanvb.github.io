@@ -1,6 +1,7 @@
 ## ep128emu 2.0.12.x
 
 Szia! Ez itt az ep128emu (egyik) fejlesztés alatti verziója, elsősorban a TVC256++ és 2DFX kártyák támogatásához. Jelenlegi verzió: 
+
 | ep128emu verzió | TVC256++ firmware kompatibilitás | 2dfx firmware verzió |
 |:--------:|:----:|:-----------:|
 | 2.0.12.6 | 0.24 | (kísérleti) |
