@@ -62,22 +62,28 @@
 <p>Segítség szükség esetén: <a href="https://wiki.enterpriseforever.com/index.php?title=EP128Emu_le%C3%ADr%C3%A1s">enterpriseforever wiki, ep128emu leírás</a>
 illetve <a href="https://wiki.enterpriseforever.com/index.php?title=EP128Emu_-_m%C3%A1s_g%C3%A9pek_emul%C3%A1l%C3%A1sa#TVC64Emu">enterpriseforever wiki, más gépek emulálása</a></p>
 <h2>Ajánlott TVC konfiguráció</h2>
-<p>A generált konfigurációk közt megtalálható több TVC256++ változat is. Aki magának szeretné összeállítani, az a következőkre ügyeljen:
-- a Machine/Configure ablakban a két utolsó fül az érdekes: a SID emuláció és a SpriteExt kapcsolható itt be.
-- ROM szegmensek:
-   - 0x05: <code>tvc256-024.rom</code> (ep128emu-ba a 16 kB-osra fordított változat szükséges, nem az eredeti 12 kB-os)
-   - 0x10..0x13: <code>tvc256-raminit.rom</code> 4x16 kB kezdeti TVC256++ fastRAM tartalom</p>
+<p>A generált konfigurációk közt megtalálható több TVC256++ változat is. Aki magának szeretné összeállítani, az a következőkre ügyeljen:</p>
+<ul>
+<li>a Machine/Configure ablakban a két utolsó fül az érdekes: a SID emuláció és a SpriteExt kapcsolható itt be.</li>
+<li>ROM szegmensek:</li>
+<li>0x05: <code>tvc256-024.rom</code> (ep128emu-ba a 16 kB-osra fordított változat szükséges, nem az eredeti 12 kB-os)</li>
+<li>0x10..0x13: <code>tvc256-raminit.rom</code> 4x16 kB kezdeti TVC256++ fastRAM tartalom</li>
+</ul>
 <p>A TVC256++ kártya a 2-es bővítő slotban érhető el, 0x30-as port tartomány. <code>EXT 2</code>-re elő kell jöjjön a menü, ami az írási és drive váltási műveletek kivételével működik. A portok működnek a tvc256++.rom nélkül is.</p>
 <p>A 2DFX kártya a fix 248/249-es porton érhető el, TVC bővítő slot-ot nem foglal.</p>
 <h2>Egyéb TVC konfiguráció</h2>
-<p>További ROM szegmensek:
-- 0x03: ha ide be van töltve a tvc_dos12d.rom, akkor lesz floppy emuláció a 0-s bővítő slotban - ez korábbi funkció, nem most került bele
-- 0x04: ha ide be van töltve a tvcfileio.rom, akkor lesz emulátor file io az 1-es bővítő slotban - ez korábbi funkció, nem most került bele, és a tvc256++ extra funkciókat nem tudja, TVC256-hoz célszerű itt nem betölteni, a tvc256++ emuláció már megoldja magának
-- 0x20..0x23: ide lehet betölteni a Gamecard 64kB-os ROM-ot. Ha ez ki van töltve (és nincs semmi a 0x06-os szegmensen) akkor a GameCard játékok is elérhetők.</p>
-<p>Kerülő megoldás fájlbetöltéshez: rom-ok lehetnek tetszőlegesen, de indítás után
-- poke 2821,128-cal működik a floppy (ha a floppyhoz tartozó EXT 2 nem is),
-- poke 2821,129-cel működik a fileio (ha a 4-es szegmensen volt),
-- poke 2821,130-cal működik a tvc256++ fájl kezelés,
-- poke 2821,5-tel pedig a kazetta emuláció.</p>
+<p>További ROM szegmensek:</p>
+<ul>
+<li>0x03: ha ide be van töltve a tvc_dos12d.rom, akkor lesz floppy emuláció a 0-s bővítő slotban - ez korábbi funkció, nem most került bele</li>
+<li>0x04: ha ide be van töltve a tvcfileio.rom, akkor lesz emulátor file io az 1-es bővítő slotban - ez korábbi funkció, nem most került bele, és a tvc256++ extra funkciókat nem tudja, TVC256-hoz célszerű itt nem betölteni, a tvc256++ emuláció már megoldja magának</li>
+<li>0x20..0x23: ide lehet betölteni a Gamecard 64kB-os ROM-ot. Ha ez ki van töltve (és nincs semmi a 0x06-os szegmensen) akkor a GameCard játékok is elérhetők.</li>
+</ul>
+<p>Kerülő megoldás fájlbetöltéshez: rom-ok lehetnek tetszőlegesen, de indítás után</p>
+<ul>
+<li><code>poke 2821,128</code>-cal működik a floppy (ha a floppyhoz tartozó EXT 2 nem is),</li>
+<li><code>poke 2821,129</code>-cel működik a fileio (ha a 4-es szegmensen volt),</li>
+<li><code>poke 2821,130</code>-cal működik a tvc256++ fájl kezelés,</li>
+<li><code>poke 2821,5</code>-tel pedig a kazetta emuláció.</li>
+</ul>
 <p>A <code>tvc12_fast2_sys</code> és a <code>tvc22_fast_sys</code> rom-ok rövidebb bootolásra vannak megpatkolva, használatuk teljesen opcionális (az egyik vagy másik eredeti helyett, a 0-s szegmensen)</p>
 <p>Debuggerben (alt+B) látható a 2 MB-nyi slow ram (TVC256++) / resource RAM (2dfx), abszolút kezdőcím <code>1A0000</code>. A TVC256++ fast ram kezdőcíme <code>3A0000</code>.</p>
