@@ -31,6 +31,10 @@
 </tr>
 </tbody>
 </table>
+<h2>Letöltés</h2>
+<p>Lásd az <a href="https://github.com/libretro/ep128emu-core/releases">ep128emu-core Releases</a> oldalon. Az <code>ep128emu-devtool.exe</code> csak TVCDevTool-os használatra ajánlott.</p>
+<h2>Hibák jelzése</h2>
+<p>Az <a href="https://enterpriseforever.com/emulatorok/">enterpriseforever fórumon</a>, az <a href="https://github.com/libretro/ep128emu-core/issues">ep128emu-core Issues</a> oldalon, vagy <a href="https://discord.gg/BZKtJjB">Discordon</a> (itt kérnék egy @zoltanvb megszólítást, mert nem nézem olyan gyakran).</p>
 <h2>Főbb TVC256++ emulációs hiányok</h2>
 <ul>
 <li>csak 2 MB PSRAM van emulálva</li>
@@ -54,24 +58,22 @@
 <li>még nagyon kezdeti állapotban van, egyedül TVC-n működik és csak a logo display és az upload</li>
 </ul>
 <h2>Installálás</h2>
+<p>Windows alatt a telepítő intézi, Linux esetében kicsomagolás után ajánlott az epmakecfg futtatása, ami a ROM letöltést és konfiguráció generálást intézi.</p>
 <p>Segítség szükség esetén: <a href="https://wiki.enterpriseforever.com/index.php?title=EP128Emu_le%C3%ADr%C3%A1s">enterpriseforever wiki, ep128emu leírás</a>
 illetve <a href="https://wiki.enterpriseforever.com/index.php?title=EP128Emu_-_m%C3%A1s_g%C3%A9pek_emul%C3%A1l%C3%A1sa#TVC64Emu">enterpriseforever wiki, más gépek emulálása</a></p>
-<p>TVC indítás: <code>ep128emu.exe -tvc</code>. A Machine/Configure ablakban a két utolsó fül az érdekes: a SID emuláció és a SpriteExt kapcsolható itt be.</p>
 <h2>Ajánlott TVC konfiguráció</h2>
-<p>ROM szegmensek:
-- 0x05: <code>tvc256++.rom</code> (a 16 kB-osra fordított változat, nem az eredeti 12 kB-os!)
-- 0x10..0x13: 4x16 kB kezdeti TVC256++ fastRAM tartalom (tvc256_ram?_init... neveken)</p>
+<p>A generált konfigurációk közt megtalálható több TVC256++ változat is. Aki magának szeretné összeállítani, az a következőkre ügyeljen:
+- a Machine/Configure ablakban a két utolsó fül az érdekes: a SID emuláció és a SpriteExt kapcsolható itt be.
+- ROM szegmensek:
+   - 0x05: <code>tvc256-024.rom</code> (ep128emu-ba a 16 kB-osra fordított változat szükséges, nem az eredeti 12 kB-os)
+   - 0x10..0x13: <code>tvc256-raminit.rom</code> 4x16 kB kezdeti TVC256++ fastRAM tartalom</p>
 <p>A TVC256++ kártya a 2-es bővítő slotban érhető el, 0x30-as port tartomány. <code>EXT 2</code>-re elő kell jöjjön a menü, ami az írási és drive váltási műveletek kivételével működik. A portok működnek a tvc256++.rom nélkül is.</p>
 <p>A 2DFX kártya a fix 248/249-es porton érhető el, TVC bővítő slot-ot nem foglal.</p>
-<p>=== Egyéb TVC konfiguráció ===
-További ROM szegmensek:
-- 0x03: ha ide be van töltve a tvc_dos12d.rom, akkor lesz floppy emuláció 
-  a 0-s bővítő slotban - ez korábbi funkció, nem most került bele
-- 0x04: ha ide be van töltve a tvcfileio.rom, akkor lesz emulátor file io 
-  az 1-es bővítő slotban - ez korábbi funkció, nem most került bele, és a tvc256++ extra
-  funkciókat nem tudja, TVC256-hoz célszerű itt nem betölteni, a tvc256++ emuláció már megoldja magának
-- 0x20..0x23: ide lehet betölteni a Gamecard 64kB-os ROM-ot.
-  Ha ez ki van töltve (és nincs semmi a 0x06-os szegmensen) akkor a GameCard játékok is elérhetők.</p>
+<h2>Egyéb TVC konfiguráció</h2>
+<p>További ROM szegmensek:
+- 0x03: ha ide be van töltve a tvc_dos12d.rom, akkor lesz floppy emuláció a 0-s bővítő slotban - ez korábbi funkció, nem most került bele
+- 0x04: ha ide be van töltve a tvcfileio.rom, akkor lesz emulátor file io az 1-es bővítő slotban - ez korábbi funkció, nem most került bele, és a tvc256++ extra funkciókat nem tudja, TVC256-hoz célszerű itt nem betölteni, a tvc256++ emuláció már megoldja magának
+- 0x20..0x23: ide lehet betölteni a Gamecard 64kB-os ROM-ot. Ha ez ki van töltve (és nincs semmi a 0x06-os szegmensen) akkor a GameCard játékok is elérhetők.</p>
 <p>Kerülő megoldás fájlbetöltéshez: rom-ok lehetnek tetszőlegesen, de indítás után
 - poke 2821,128-cal működik a floppy (ha a floppyhoz tartozó EXT 2 nem is),
 - poke 2821,129-cel működik a fileio (ha a 4-es szegmensen volt),
@@ -79,26 +81,3 @@ További ROM szegmensek:
 - poke 2821,5-tel pedig a kazetta emuláció.</p>
 <p>A <code>tvc12_fast2_sys</code> és a <code>tvc22_fast_sys</code> rom-ok rövidebb bootolásra vannak megpatkolva, használatuk teljesen opcionális (az egyik vagy másik eredeti helyett, a 0-s szegmensen)</p>
 <p>Debuggerben (alt+B) látható a 2 MB-nyi slow ram (TVC256++) / resource RAM (2dfx), abszolút kezdőcím <code>1A0000</code>. A TVC256++ fast ram kezdőcíme <code>3A0000</code>.</p>
-<h2>Demo programok</h2>
-<p>demomou.cas / demomou.bas: TVC256++ grafika + egér demo, az egér pozíciót és a sprite ütközésregisztert mutatja.
-Billentyűk: 
-- q-w-e: graphics 2-4-16 (a TVC eredeti képernyője)
-- a-s-d-f: overlay nincs - txt 2 - txt 16 - bitmap
-- z-g-h-j: az overlay scrollozása (átfordulás után az extra keret is megjelenik)
-- o-p: aktív sprite 0..7 váltás (az aktív sprite-ot az egér mozgatja)
-- u-i: a kétszínű sprite-ok tükrözése (vízszintes-függőleges)
-- k-l: az aktív sprite fázisának váltása
-- n-m: az aktív sprite színének váltása (2 színű sprite módban)
-- b: az aktív sprite background/foreground váltása
-- v: 2/16 színű sprite váltás (16 színű sprite-ból csak 1 van feltöltve)</p>
-<p>demorst.cas / demorst.bas: TVC256++ RST $30 demo, az OS rendszer hívásokat tudja tesztelni
-Betöltés után EXT 0-val hívható az RST 30:
-  EXT 0,<funkció>,<DE értéke>,<BC értéke>
-Visszatérés után a 6644..6640 címeken található az A..E regiszterek értéke
-Pl. a GET_IOBASE $5D hívás, az eredmény a C regiszterben:
-  EXT 0,93,0,0
-  PRINT PEEK(6642)</p>
-<p>crtcmax3.cas / crtcmax3.bas: 2DFX logo demo.
-- wasd: logo mozgatása
-- q: logo ki/be
-- e: a TVC képernyő kiterjesztése (a basic képernyő szétesik tőle)</p>
