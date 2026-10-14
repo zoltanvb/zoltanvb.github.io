@@ -40,6 +40,7 @@ illetve [enterpriseforever wiki, más gépek emulálása](https://wiki.enterpris
 
 ## Ajánlott TVC konfiguráció
 A generált konfigurációk közt megtalálható több TVC256++ változat is. Aki magának szeretné összeállítani, az a következőkre ügyeljen:
+
 - a Machine/Configure ablakban a két utolsó fül az érdekes: a SID emuláció és a SpriteExt kapcsolható itt be.
 - ROM szegmensek:
    - 0x05: `tvc256-024.rom` (ep128emu-ba a 16 kB-osra fordított változat szükséges, nem az eredeti 12 kB-os)
@@ -51,15 +52,17 @@ A 2DFX kártya a fix 248/249-es porton érhető el, TVC bővítő slot-ot nem fo
 
 ## Egyéb TVC konfiguráció
 További ROM szegmensek:
+
 - 0x03: ha ide be van töltve a tvc_dos12d.rom, akkor lesz floppy emuláció a 0-s bővítő slotban - ez korábbi funkció, nem most került bele
 - 0x04: ha ide be van töltve a tvcfileio.rom, akkor lesz emulátor file io az 1-es bővítő slotban - ez korábbi funkció, nem most került bele, és a tvc256++ extra funkciókat nem tudja, TVC256-hoz célszerű itt nem betölteni, a tvc256++ emuláció már megoldja magának
 - 0x20..0x23: ide lehet betölteni a Gamecard 64kB-os ROM-ot. Ha ez ki van töltve (és nincs semmi a 0x06-os szegmensen) akkor a GameCard játékok is elérhetők.
 
 Kerülő megoldás fájlbetöltéshez: rom-ok lehetnek tetszőlegesen, de indítás után
-- poke 2821,128-cal működik a floppy (ha a floppyhoz tartozó EXT 2 nem is),
-- poke 2821,129-cel működik a fileio (ha a 4-es szegmensen volt),
-- poke 2821,130-cal működik a tvc256++ fájl kezelés,
-- poke 2821,5-tel pedig a kazetta emuláció.
+
+- `poke 2821,128`-cal működik a floppy (ha a floppyhoz tartozó EXT 2 nem is),
+- `poke 2821,129`-cel működik a fileio (ha a 4-es szegmensen volt),
+- `poke 2821,130`-cal működik a tvc256++ fájl kezelés,
+- `poke 2821,5`-tel pedig a kazetta emuláció.
 
 A `tvc12_fast2_sys` és a `tvc22_fast_sys` rom-ok rövidebb bootolásra vannak megpatkolva, használatuk teljesen opcionális (az egyik vagy másik eredeti helyett, a 0-s szegmensen)
 
