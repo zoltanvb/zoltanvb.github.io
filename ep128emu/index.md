@@ -5,6 +5,7 @@ Szia! Ez itt az ep128emu (egyik) fejlesztés alatti verziója, elsősorban a TVC
 | ep128emu verzió | TVC256++ firmware kompatibilitás | 2dfx firmware verzió |
 |:--------:|:----:|:-----------:|
 | 2.0.12.6 | 0.24 | (kísérleti) |
+| 2.0.12.7 | 0.24 | 1.1.0 |
 
 ## Letöltés
 Lásd az [ep128emu-core Releases](https://github.com/libretro/ep128emu-core/releases) oldalon. Az `ep128emu-devtool.exe` csak TVCDevTool-os használatra ajánlott.
@@ -30,8 +31,8 @@ Az [enterpriseforever fórumon](https://enterpriseforever.com/emulatorok/), az [
 - devtool specifikus eltérés: az U2-U3 lapra a TVC256++ alapesetben a Fast RAM 4-5 lapját helyezi, de hogy a devtool memóriába áttöltő funkciója működjön indítás után, itt az alapérték az eredeti TVC memória (0xFF a vonatkozó regiszterekben).
 
 ## Főbb 2DFX emulációs hiányok
-- csak 2 MB RRAM van emulálva
-- még nagyon kezdeti állapotban van, egyedül TVC-n működik és csak a logo display és az upload
+- A reset / power cycle és az interrupt kezelés nincs még teljesen összeépítve
+- Egyebekben az emuláció a Vaczkó Károly által biztosított "portable 2dfx emulator" kódot építi be
 
 ## Installálás
 Windows alatt a telepítő intézi, Linux esetében kicsomagolás után ajánlott az epmakecfg futtatása, ami a ROM letöltést és konfiguráció generálást intézi.
@@ -51,7 +52,7 @@ A generált konfigurációk közt megtalálható több TVC256++ változat is. Ak
 
 A TVC256++ kártya a 2-es bővítő slotban érhető el, 0x30-as port tartomány. `EXT 2`-re elő kell jöjjön a menü, ami az írási és drive váltási műveletek kivételével működik. A portok működnek a tvc256++.rom nélkül is.
 
-A 2DFX kártya a fix 248/249-es porton érhető el, TVC bővítő slot-ot nem foglal.
+A 2DFX kártya a fix 248/249-es porton érhető el, TVC bővítő slot-ot vagy EP ROM helyet nem foglal.
 
 ## Egyéb TVC konfiguráció
 További ROM szegmensek:
@@ -69,4 +70,4 @@ Kerülő megoldás fájlbetöltéshez: rom-ok lehetnek tetszőlegesen, de indít
 
 A `tvc12_fast2_sys` és a `tvc22_fast_sys` rom-ok rövidebb bootolásra vannak megpatkolva, használatuk teljesen opcionális (az egyik vagy másik eredeti helyett, a 0-s szegmensen)
 
-Debuggerben (alt+B) látható a 2 MB-nyi slow ram (TVC256++) / resource RAM (2dfx), abszolút kezdőcím `1A0000`. A TVC256++ fast ram kezdőcíme `3A0000`.
+Debuggerben (alt+B) látható a 2 MB-nyi slow ram (TVC256++), abszolút kezdőcím `1A0000`. A TVC256++ fast ram kezdőcíme `3A0000`.
