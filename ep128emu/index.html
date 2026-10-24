@@ -29,6 +29,11 @@
 <td style="text-align: center;">0.24</td>
 <td style="text-align: center;">(kísérleti)</td>
 </tr>
+<tr>
+<td style="text-align: center;">2.0.12.7</td>
+<td style="text-align: center;">0.24</td>
+<td style="text-align: center;">1.1.0</td>
+</tr>
 </tbody>
 </table>
 <h2>Letöltés</h2>
@@ -55,8 +60,8 @@
 </ul>
 <h2>Főbb 2DFX emulációs hiányok</h2>
 <ul>
-<li>csak 2 MB RRAM van emulálva</li>
-<li>még nagyon kezdeti állapotban van, egyedül TVC-n működik és csak a logo display és az upload</li>
+<li>A reset / power cycle és az interrupt kezelés nincs még teljesen összeépítve</li>
+<li>Egyebekben az emuláció a Vaczkó Károly által biztosított "portable 2dfx emulator" kódot építi be</li>
 </ul>
 <h2>Installálás</h2>
 <p>Windows alatt a telepítő intézi, Linux esetében kicsomagolás után ajánlott az epmakecfg futtatása, ami a ROM letöltést és konfiguráció generálást intézi.</p>
@@ -72,7 +77,7 @@ illetve <a href="https://wiki.enterpriseforever.com/index.php?title=EP128Emu_-_m
 <li>0x10..0x13: <code>tvc256-raminit.rom</code> 4x16 kB kezdeti TVC256++ fastRAM tartalom</li>
 </ul>
 <p>A TVC256++ kártya a 2-es bővítő slotban érhető el, 0x30-as port tartomány. <code>EXT 2</code>-re elő kell jöjjön a menü, ami az írási és drive váltási műveletek kivételével működik. A portok működnek a tvc256++.rom nélkül is.</p>
-<p>A 2DFX kártya a fix 248/249-es porton érhető el, TVC bővítő slot-ot nem foglal.</p>
+<p>A 2DFX kártya a fix 248/249-es porton érhető el, TVC bővítő slot-ot vagy EP ROM helyet nem foglal.</p>
 <h2>Egyéb TVC konfiguráció</h2>
 <p>További ROM szegmensek:</p>
 <ul>
@@ -88,4 +93,4 @@ illetve <a href="https://wiki.enterpriseforever.com/index.php?title=EP128Emu_-_m
 <li><code>poke 2821,5</code>-tel pedig a kazetta emuláció.</li>
 </ul>
 <p>A <code>tvc12_fast2_sys</code> és a <code>tvc22_fast_sys</code> rom-ok rövidebb bootolásra vannak megpatkolva, használatuk teljesen opcionális (az egyik vagy másik eredeti helyett, a 0-s szegmensen)</p>
-<p>Debuggerben (alt+B) látható a 2 MB-nyi slow ram (TVC256++) / resource RAM (2dfx), abszolút kezdőcím <code>1A0000</code>. A TVC256++ fast ram kezdőcíme <code>3A0000</code>.</p>
+<p>Debuggerben (alt+B) látható a 2 MB-nyi slow ram (TVC256++), abszolút kezdőcím <code>1A0000</code>. A TVC256++ fast ram kezdőcíme <code>3A0000</code>.</p>
