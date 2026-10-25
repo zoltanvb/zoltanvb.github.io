@@ -6,6 +6,7 @@ Szia! Ez itt az ep128emu (egyik) fejlesztés alatti verziója, elsősorban a TVC
 |:--------:|:----:|:-----------:|
 | 2.0.12.6 | 0.24 | (kísérleti) |
 | 2.0.12.7 | 0.24 | 1.1.0 |
+| 2.0.12.8 | 0.24 | 1.1.0 |
 
 ## Letöltés
 Lásd az [ep128emu-core Releases](https://github.com/libretro/ep128emu-core/releases) oldalon. Az `ep128emu-devtool.exe` csak TVCDevTool-os használatra ajánlott.
@@ -21,7 +22,8 @@ Az [enterpriseforever fórumon](https://enterpriseforever.com/emulatorok/), az [
 - fájlkezelés különbségek:
   - az összes fájl művelet az ep128emu "work directory" alatt értelmezendő
   - a fájlhozzáférés nem érzékeny a kis/nagy betűre (semmilyen platformon)
-  - a rövidített nevű vagy név nélküli fájlbetöltés nem támogatott (bár a .cas kiterjesztés elhagyható a load parancsban)
+  - a rövidített nevű fájlbetöltés nem támogatott (bár a .cas kiterjesztés elhagyható a load parancsban)
+  - név nélküli fájlbetöltésnél a FileIO-nál már megszokott fájlválasztó ablak ugrik fel
   - a fájl/könyvtár írás, törlés, átnevezés mindig hibával tér vissza
   - a REG_DRIVE_SELECT nem implementált (mivel minden fájlművelet ugyanoda mutat)
   - a DSK fájl felcsatolás nem implementált (természetesen az ep128emu amúgy kezeli a formátumot)
@@ -43,7 +45,7 @@ illetve [enterpriseforever wiki, más gépek emulálása](https://wiki.enterpris
 TVC256++ demo programok a [TVC256++ oldalán](https://github.com/dikdom/tvc256kplusplus/blob/main/binaries/flash-root-1.3-files.zip) érhetőek el, a .zip fájlt az ep128emu munkakönyvtárába kicsomagolva `load "launcher` utasítással indítható.
 
 ## Ajánlott TVC konfiguráció
-A generált konfigurációk közt megtalálható több TVC256++ változat is. Aki magának szeretné összeállítani, az a következőkre ügyeljen:
+A generált konfigurációk közt megtalálható több TVC256++ és 2DFX változat is. Aki magának szeretné összeállítani, az a következőkre ügyeljen:
 
 - a Machine/Configure ablakban a két utolsó fül az érdekes: a SID emuláció és a SpriteExt kapcsolható itt be.
 - ROM szegmensek:
